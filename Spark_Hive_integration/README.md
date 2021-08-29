@@ -47,6 +47,6 @@ plt.style.use("fivethirtyeight") fig = plt.figure(figsize=(6,12)) fig.patch.set_
 explode = (0.1, 0, 0, 0, 0, 0, 0, 0) plt.pie(work,labels=username,autopct='%1.1f%%',startangle=140,explode= explode) 
 plt.title('Avg Hours By Person',bbox={'facecolor':'1', 'pad':4})
 
-## Similarly for bar chart
+## Similarly for bar chart.
 df = highest_work_time plt.figure(figsize = (8,5)) sns.barplot(x = 'user_name',y='working_sec',data = df) 
 plt.title("Percent Avg Hours By Person") plt.ylim(0,25000) plt.xticks(rotation='vertical') plt.show()
